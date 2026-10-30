@@ -219,10 +219,19 @@ plugins:
       priority: 5
       condition: not-index
   - source: "@quartz-community/comments"
-    enabled: false
+    enabled: true
     options:
       provider: giscus
-      options: {}
+      options:
+        repo: weuing56/261026T184724-kindergarden
+        repoId: R_kgDOVXzilA
+        category: Announcements
+        categoryId: DIC_kwDOVXzilM4DKCw3
+        mapping: pathname
+        strict: true
+        reactionsEnabled: true
+        inputPosition: bottom
+        lang: zh-TW
     layout:
       position: afterBody
       priority: 10

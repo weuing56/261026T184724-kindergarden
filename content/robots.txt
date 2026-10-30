@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://weuing56.github.io/261026T184724-kindergarden/sitemap.xml
