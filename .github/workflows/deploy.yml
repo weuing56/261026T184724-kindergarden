@@ -45,6 +45,12 @@ jobs:
         run: npx quartz plugin install
       - name: Build Quartz
         run: npx quartz build
+      - name: Copy Search Console verification HTML
+        run: |
+          shopt -s nullglob
+          for f in content/google*.html; do
+            cp "$f" "public/$(basename "$f")"
+          done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
